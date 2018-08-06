@@ -7,8 +7,8 @@ import java.io.Serializable;
 /**
 * TODO
 *
-* @author
-* @date
+* @author ${author}
+* @date ${date}
 */
 @ApiModel(value = "${EntityName}Dto")
 @Data

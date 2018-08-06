@@ -7,8 +7,8 @@ import lombok.Data;
 /**
  * TODO
  *
- * @author
- * @date
+ * @author ${author}
+ * @date ${date}
  */
 @Data
 public class Search${EntityName}Vo extends PageVo{

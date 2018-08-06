@@ -27,8 +27,8 @@ import java.util.List;
 /**
 * TODO
 *
-* @author
-* @date
+* @author ${author}
+* @date ${date}
 */
 @Api(value = "${EntityName}接口", tags = { "${EntityName}接口" })
 @RestController

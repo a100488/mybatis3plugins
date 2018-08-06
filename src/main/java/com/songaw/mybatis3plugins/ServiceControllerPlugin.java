@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -52,6 +53,7 @@ public class ServiceControllerPlugin extends PluginAdapter {
         String idType = getProperties().getProperty("idType");
         //项目的主包
         String projectPackage = getProperties().getProperty("projectPackage");
+        String author = getProperties().getProperty("author");
         String javaRepositoryPackage = this.getContext().getJavaClientGeneratorConfiguration().getTargetPackage();
         String javaMapperType = introspectedTable.getMyBatis3JavaMapperType();
 
@@ -76,6 +78,10 @@ public class ServiceControllerPlugin extends PluginAdapter {
         root.put("targetPojoDtoPackage", targetPojoDtoPackage);
         root.put("idType", idType);
         root.put("projectPackage", projectPackage);
+        root.put("author", author);
+        SimpleDateFormat aDate=new SimpleDateFormat("yyyy-mm-dd  HH:mm:ss");
+        long now=System.currentTimeMillis();
+        root.put("date", aDate.format(now));
         //1 类名 2.service的包名 3.主键的类型 4.
         if(targetServicePackage!=null&&targetServicePackage.length()>0) {
             genService(targetProject, targetServicePackage, javaClassName, root);

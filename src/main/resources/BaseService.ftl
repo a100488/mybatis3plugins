@@ -8,7 +8,8 @@ import org.springframework.stereotype.Service;
 /**
 * TODO
 *
-* @author TODO
+* @author ${author}
+* @date ${date}
 */
 @Service
 public interface ${EntityName}Service extends BaseService<${EntityName},${idType}> {

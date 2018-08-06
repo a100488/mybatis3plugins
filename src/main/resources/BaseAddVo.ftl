@@ -7,8 +7,8 @@ import lombok.Data;
 /**
  * TODO
  *
- * @author
- * @date
+ * @author ${author}
+ * @date ${date}
  */
 @ApiModel(value = "Add${EntityName}Vo")
 @Data
