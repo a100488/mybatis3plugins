@@ -47,8 +47,11 @@ public class ServiceControllerPlugin extends PluginAdapter {
         String targetPojoVoPackage = getProperties().getProperty("targetPojoVoPackage");
         //返回dto
         String targetPojoDtoPackage = getProperties().getProperty("targetPojoDtoPackage");
+
         //ID的类型
         String idType = getProperties().getProperty("idType");
+        //项目的主包
+        String projectPackage = getProperties().getProperty("projectPackage");
         String javaRepositoryPackage = this.getContext().getJavaClientGeneratorConfiguration().getTargetPackage();
         String javaMapperType = introspectedTable.getMyBatis3JavaMapperType();
 
@@ -72,6 +75,7 @@ public class ServiceControllerPlugin extends PluginAdapter {
         root.put("targetPojoVoPackage", targetPojoVoPackage);
         root.put("targetPojoDtoPackage", targetPojoDtoPackage);
         root.put("idType", idType);
+        root.put("projectPackage", projectPackage);
         //1 类名 2.service的包名 3.主键的类型 4.
         if(targetServicePackage!=null&&targetServicePackage.length()>0) {
             genService(targetProject, targetServicePackage, javaClassName, root);

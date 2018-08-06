@@ -1,6 +1,6 @@
 package ${targetServicePackage}.impl;
 
-import com.guige.fss.common.service.impl.BaseServiceImpl;
+import ${projectPackage}.common.service.impl.BaseServiceImpl;
 import ${targetModelPackage}.${EntityName};
 import  ${targetServicePackage}.${EntityName}Service;
 import ${targetMapperPackage}.${EntityName}Mapper;

@@ -1,6 +1,6 @@
 package ${targetPojoVoPackage};
 
-import com.guige.fss.common.pojo.vo.PageVo;
+import ${projectPackage}.common.pojo.vo.PageVo;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 

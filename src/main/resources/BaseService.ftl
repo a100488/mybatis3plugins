@@ -1,6 +1,6 @@
 package ${targetServicePackage};
 
-import com.guige.fss.common.service.BaseService;
+import ${projectPackage}.common.service.BaseService;
 import ${targetModelPackage}.${EntityName};
 import org.springframework.stereotype.Service;
 

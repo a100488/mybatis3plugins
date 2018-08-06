@@ -2,8 +2,8 @@ package ${targetControllerPackage};
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.guige.fss.common.pojo.dto.PageInfoDto;
-import com.guige.fss.common.pojo.dto.Result;
+import ${projectPackage}.common.pojo.dto.PageInfoDto;
+import ${projectPackage}.common.pojo.dto.Result;
 import ${targetModelPackage}.${EntityName};
 import ${targetPojoDtoPackage}.${EntityName}Dto;
 import ${targetPojoVoPackage}.Add${EntityName}Vo;
