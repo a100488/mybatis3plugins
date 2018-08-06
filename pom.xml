@@ -31,6 +31,18 @@
             <version>2.3.23</version>
         </dependency>
     </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>guige-hosted</id>
+            <name>guige-hosted</name>
+            <url>http://192.168.1.166:8081/repository/guige-hosted/</url>
+        </repository>
+        <snapshotRepository>
+            <id>guige-hosted-snapshot</id>
+            <name>guige-hosted-snapshot</name>
+            <url>http://192.168.1.166:8081/repository/guige-hosted-snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
     <repositories>
         <repository>
             <id>maven-public</id>
